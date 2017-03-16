@@ -1,0 +1,27 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+   
+   <bean id = "student" class="com.w205951620.dao.Student" autowire="byType">
+       <property name="firstName" value="Giovanni" />
+       <property name="lastName" value="Perazzo" />
+       <property name="dob" value="08/03/1990" />   
+   </bean>
+   
+   <bean id = "address" class="com.w205951620.dao.Address">
+       <property name="street" value="Main St" />
+       <property name="zip" value="77777" />
+       <property name="city" value="Houston" />
+   </bean>
+   
+   <bean id = "grade" class="com.w205951620.dao.Grade">
+       <property name="subject" value="Java Advanced" />
+       <property name="letterGrade" value="A" />
+   </bean>
+
+</beans>
